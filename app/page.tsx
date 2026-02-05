@@ -19,6 +19,8 @@ import {
 type Status = { type: "idle" | "success" | "error"; message: string };
 
 export default function Home() {
+  const apiBase = process.env.NEXT_PUBLIC_API_BASE || "http://localhost:4000";
+
   const [formData, setFormData] = useState<FormState>(() => createInitialFormState());
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [status, setStatus] = useState<Status>({ type: "idle", message: "" });
@@ -127,7 +129,7 @@ export default function Home() {
 
     setIsSubmitting(true);
     try {
-      const response = await fetch("http://localhost:4000/api/applications", {
+      const response = await fetch(`${apiBase}/api/applications`, {
         method: "POST",
         body: formDataPayload,
       });
