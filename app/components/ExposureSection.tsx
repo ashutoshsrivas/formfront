@@ -68,13 +68,13 @@ export function ExposureSection({ formData, updateField }: Props) {
         </label>
 
         <label className="flex flex-col gap-2 text-sm font-medium text-slate-800">
-          If yes, list projects with a brief description
+          If yes, list projects with a brief description (other than the routine projects in Btech - CSE program which are worth mentioning)
           <textarea
             rows={3}
             value={formData.projectDetails}
             onChange={(e) => updateField("projectDetails", e.target.value)}
             className="w-full rounded-lg border border-slate-200 bg-white px-3 py-2 text-base text-slate-900 shadow-sm focus:border-slate-400 focus:outline-none focus:ring-2 focus:ring-slate-200"
-            placeholder="Project title, tech stack, problem solved, impact"
+            placeholder="Project title, tech stack, problem solved, impact, etc."
           />
         </label>
 
@@ -104,7 +104,7 @@ export function ExposureSection({ formData, updateField }: Props) {
           </div>
 
           <div className="space-y-2">
-            <p className="text-sm font-medium text-slate-800">Engaged in other skill building activities?</p>
+            <p className="text-sm font-medium text-slate-800">Engaged in other skill building activities? (Like AWS Skill Builder, PwC Accelerator, Infosys Springboard etc.)</p>
             <div className="flex gap-3">
               {["yes", "no"].map((value) => (
                 <label
@@ -147,6 +147,8 @@ export function ExposureSection({ formData, updateField }: Props) {
             placeholder="Platform, course, completion status"
           />
         </label>
+
+        <p className="text-lg font-semibold text-slate-900">Skillset and Achievements</p>
 
         <label className="flex flex-col gap-2 text-sm font-medium text-slate-800">
           Special tech or non-tech skills you are confident about

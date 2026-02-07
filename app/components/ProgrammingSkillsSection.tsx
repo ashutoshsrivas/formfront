@@ -59,16 +59,6 @@ export function ProgrammingSkillsSection({ formData, updateField, updateProgramm
         </label>
       </div>
 
-      <label className="flex flex-col gap-1 text-sm font-medium text-slate-800">
-        Any other programming languages (name and level)
-        <input
-          type="text"
-          value={formData.otherLanguages}
-          onChange={(e) => updateField("otherLanguages", e.target.value)}
-          className="w-full rounded-lg border border-slate-200 bg-white px-3 py-2 text-base text-slate-900 shadow-sm focus:border-slate-400 focus:outline-none focus:ring-2 focus:ring-slate-200"
-          placeholder="e.g., Go - Beginner"
-        />
-      </label>
     </Section>
   );
 }

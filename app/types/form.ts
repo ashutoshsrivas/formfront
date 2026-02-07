@@ -30,7 +30,6 @@ export type FormState = {
   programmingSkills: Record<string, ProgrammingLevel>;
   otherProgrammingName: string;
   otherProgrammingLevel: ProgrammingLevel;
-  otherLanguages: string;
   leetcodeRank: string;
   leetcodeLink: string;
   hackerrankRank: string;
@@ -77,7 +76,6 @@ export function createInitialFormState(): FormState {
     programmingSkills,
     otherProgrammingName: "",
     otherProgrammingLevel: programmingLevels[0],
-    otherLanguages: "",
     leetcodeRank: "",
     leetcodeLink: "",
     hackerrankRank: "",
