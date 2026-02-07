@@ -11,7 +11,7 @@ export function BasicInfoSection({ formData, updateField, toggleDevice }: Props)
   return (
     <Section
       title="Basic Information"
-      description="Eligibility and shortlisting rely on these responses."
+      description=""
       badge="Required"
     >
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
@@ -38,19 +38,21 @@ export function BasicInfoSection({ formData, updateField, toggleDevice }: Props)
         </label>
 
         <label className="flex flex-col gap-1 text-sm font-medium text-slate-800">
-          University*
+          University Campus*
           <select
             value={formData.university}
             onChange={(e) => updateField("university", e.target.value)}
             className="w-full rounded-lg border border-slate-200 bg-white px-3 py-2 text-base text-slate-900 shadow-sm focus:border-slate-400 focus:outline-none focus:ring-2 focus:ring-slate-200"
           >
             <option>Graphic Era Deemed to be University</option>
-            <option>Graphic Era Hill University</option>
+            <option>Graphic Era Hill University, Dehradun Campus</option>
+            <option>Graphic Era Hill University, Bhimtal Campus</option>
+            <option>Graphic Era Hill University, Haldwani Campus</option>
           </select>
         </label>
 
         <label className="flex flex-col gap-1 text-sm font-medium text-slate-800">
-          Enrollment Number / Student ID*
+          Student ID*
           <input
             type="text"
             required

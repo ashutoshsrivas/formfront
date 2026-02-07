@@ -12,7 +12,7 @@ export function ResumeUpload({ formData, updateField }: { formData: FormState; u
   const currentName = formData.resumeFile?.name;
   return (
     <div className="space-y-2 rounded-xl border border-slate-200 bg-slate-50 p-4">
-      <p className="text-sm font-medium text-slate-800">Upload resume (pdf, doc, docx, txt) — max 10MB</p>
+      <p className="text-sm font-medium text-slate-800">Upload resume with embedded Photograph (pdf, doc, docx, txt) — max 10MB</p>
       <input
         type="file"
         accept=".pdf,.doc,.docx,.txt,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document,text/plain"

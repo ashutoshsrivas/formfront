@@ -156,43 +156,45 @@ export default function Home() {
     <div className="min-h-screen bg-gradient-to-b from-slate-50 to-slate-100 text-slate-900">
       <div className="mx-auto max-w-5xl px-6 py-10">
         <header className="mb-8 space-y-2 text-center">
-          <p className="text-sm uppercase tracking-[0.2em] text-slate-500">2026-27 Cohort</p>
+          <p className="text-sm uppercase tracking-[0.4em] text-slate-500"><b>Expression of Interest</b> for <b>2026-27 Cohort</b></p>
           <h1 className="text-3xl font-semibold text-slate-900 sm:text-4xl">
-            Application for the iOS Student Developer Program (powered by Apple & Infosys)
+            iOS Student Developer Program <br></br> (powered by Apple & Infosys)
           </h1>
+         
         </header>
 
         <div className="mb-8 space-y-4 rounded-3xl bg-white p-6 text-sm text-slate-700 shadow-lg shadow-slate-200/60 ring-1 ring-slate-200 sm:p-8">
           <p className="font-semibold text-slate-900">Brief about the Program:</p>
-          <p>
-            This is an exclusive program designed, developed and delivered with industry support from Apple and Infosys.
-            This special/exclusive 48* credit program is offered across V and VI Semesters, and is integrated with the CSE program.
-            The program is structured in a way that it covers certain core courses of BTech CS and rest of the iOS Program related courses equipping students with the product development experience and industry best practices.
-            This intensive project based program with clearly defined milestones and outcomes, is offered at the state-of-the-art iOS Development Centre of GEU, powered by Apple and Infosys.
-            This program includes a 4 week internship at Infosys after the V Semester, for eligible students based on their performance (Students will be required to arrange for a MacBook for the internship, and bear their travel and food expenses).
-            The program doesn't make any promise of a placement, however it substantially raises the prospect of higher quality placements, entrepreneurship and career advancement by building the personality and skill-sets of the students who take up this program.
-          </p>
+          <ul className="list-disc space-y-2 pl-5">
+            <li>This is an exclusive program designed, developed and delivered with industry support from Apple and Infosys.</li>
+            <li>This special/exclusive 48* credit program is offered across V and VI Semesters, and is integrated with the CSE program.</li>
+            <li>The program is structured in a way that it covers certain core courses of BTech CS and rest of the iOS Program related courses equipping students with the product development experience and industry best practices.</li>
+            <li>This intensive project based program with clearly defined milestones and outcomes, is offered at the state-of-the-art iOS Development Centre of GEU, powered by Apple and Infosys.</li>
+            <li>This program includes a 4 week internship at Infosys after the V Semester, for eligible students based on their performance (Students will be required to arrange for a MacBook for the internship, and bear their travel and food expenses).</li>
+            <li>The program doesn't make any promise of a placement, however it substantially raises the prospect of higher quality placements, entrepreneurship and career advancement by building the personality and skill-sets of the students who take up this program.</li>
+          </ul>
           <p className="font-semibold text-slate-900">Eligibility and Selection process:</p>
-          <p>
-            Only the students of B.Tech CSE 2nd year (Fourth Semester) are eligible to apply.
-            This is a one year (two semester) program offered in the third year of the B.Tech CSE program only to selected 100 students.
-            The registration for the program can be done by filling this Application form.
-            Details should be filled carefully, as eligibility and shortlisting for next stage will be based on your response.
-            Subsequent to filling this form there are two more stages in the selection process: Online Programming Test from Infosys and a week-long Bootcamp facilitated by Apple and Infosys, schedule for which would be communicated later via email to the shortlisted students.
-            Based on the performance in the Infosys Test and the Bootcamp the top 100 students will be selected into the program.
-            In case of any queries feel free to visit the iOS Development Centre (Ground Floor - Silver Jubilee Convention Centre) or contact Prof. Dr. Sachin Ghai (Head - iOSDC) Email: <a className="font-semibold text-slate-900 underline" href="mailto:iOSDC@geu.ac.in">iOSDC@geu.ac.in</a>, +91 9837333163.
-            For details regarding the program, visit <a className="font-semibold text-slate-900 underline" href="https://iosdc.geu.ac.in" target="_blank" rel="noreferrer">iosdc.geu.ac.in</a>.
-            Only students sure of joining the program upon selection, should apply.
-            Registration closes on 14 February 2026, at 11:59 PM.
-          </p>
+          <ul className="list-disc space-y-2 pl-5">
+            <li>Only the students of B.Tech CSE 2nd year (Fourth Semester) are eligible to apply.</li>
+            <li>This is a one year (two semester) program offered in the third year of the B.Tech CSE program only to selected 100 students.</li>
+            <li>The registration for the program can be done by filling this Application form.</li>
+            <li>Details should be filled carefully, as eligibility and shortlisting for next stage will be based on your response.</li>
+            <li>Subsequent to filling this form there are two more stages in the selection process: Online Programming Test from Infosys and a week-long Bootcamp facilitated by Apple and Infosys, schedule for which would be communicated later via email to the shortlisted students.</li>
+            <li>Based on the performance in the Infosys Test and the Bootcamp the top 100 students will be selected into the program.</li>
+            <li>In case of any queries feel free to visit the iOS Development Centre (Ground Floor - Silver Jubilee Convention Centre) or contact Prof. Dr. Sachin Ghai (Head - iOSDC) Email: <a className="font-semibold text-slate-900 underline" href="mailto:iOSDC@geu.ac.in">iOSDC@geu.ac.in</a>, +91 9837333163.</li>
+            <li>For details regarding the program, visit <a className="font-semibold text-slate-900 underline" href="https://iosdc.geu.ac.in" target="_blank" rel="noreferrer">iosdc.geu.ac.in</a>.</li>
+            <li>Only students sure of joining the program upon selection, should apply.</li>
+            <li>Registration closes on 14 February 2026, at 11:59 PM.</li>
+          </ul>
         </div>
 
         <form
           onSubmit={handleSubmit}
           className="space-y-8 rounded-3xl bg-white p-6 shadow-xl shadow-slate-200/60 ring-1 ring-slate-200 sm:p-8"
         >
+          <h2 style={{fontSize:'2em',marginBottom:'0'}}>Application form </h2>
           <p className="text-base text-slate-600 sm:text-lg">
-            Fill in the details below. Fields marked with * are required.
+            Fill in the details below. Fields marked with * are required. 
           </p>
           <BasicInfoSection formData={formData} updateField={updateField} toggleDevice={toggleDevice} />
           <AcademicPerformanceSection formData={formData} updateField={updateField} />
