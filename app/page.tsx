@@ -171,7 +171,8 @@ export default function Home() {
             <li>The program is structured in a way that it covers certain core courses of BTech CS and rest of the iOS Program related courses equipping students with the product development experience and industry best practices.</li>
             <li>This intensive project based program with clearly defined milestones and outcomes, is offered at the state-of-the-art iOS Development Centre of GEU, powered by Apple and Infosys.</li>
             <li>This program includes a 4 week internship at Infosys after the V Semester, for eligible students based on their performance (Students will be required to arrange for a MacBook for the internship, and bear their travel and food expenses).</li>
-            <li>The program doesn't make any promise of a placement, however it substantially raises the prospect of higher quality placements, entrepreneurship and career advancement by building the personality and skill-sets of the students who take up this program.</li>
+            <li>The program doesn't offer any placement, however it substantially raises the prospect of higher quality placements, entrepreneurship and career advancement by building the personality and skill-sets of the students who take up this program.</li>
+            <li>The Students will be allowed to participate in all eligible placement drives and internship opportunities offering joining after the 6th semester.</li>
           </ul>
           <p className="font-semibold text-slate-900">Eligibility and Selection process:</p>
           <ul className="list-disc space-y-2 pl-5">
@@ -184,7 +185,7 @@ export default function Home() {
             <li>In case of any queries feel free to visit the iOS Development Centre (Ground Floor - Silver Jubilee Convention Centre) or contact Prof. Dr. Sachin Ghai (Head - iOSDC) Email: <a className="font-semibold text-slate-900 underline" href="mailto:iOSDC@geu.ac.in">iOSDC@geu.ac.in</a>, +91 9837333163.</li>
             <li>For details regarding the program, visit <a className="font-semibold text-slate-900 underline" href="https://iosdc.geu.ac.in" target="_blank" rel="noreferrer">iosdc.geu.ac.in</a>.</li>
             <li>Only students sure of joining the program upon selection, should apply.</li>
-            <li>Registration closes on 14 February 2026, at 11:59 PM.</li>
+            <li>Registration closes on 15 February 2026, at 11:59 PM.</li>
           </ul>
         </div>
 
