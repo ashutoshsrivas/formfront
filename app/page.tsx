@@ -185,7 +185,7 @@ export default function Home() {
             <li>In case of any queries feel free to visit the iOS Development Centre (Ground Floor - Silver Jubilee Convention Centre) or contact Prof. Dr. Sachin Ghai (Head - iOSDC) Email: <a className="font-semibold text-slate-900 underline" href="mailto:iOSDC@geu.ac.in">iOSDC@geu.ac.in</a>, +91 9837333163.</li>
             <li>For details regarding the program, visit <a className="font-semibold text-slate-900 underline" href="https://iosdc.geu.ac.in" target="_blank" rel="noreferrer">iosdc.geu.ac.in</a>.</li>
             <li>Only students sure of joining the program upon selection, should apply.</li>
-            <li>Registration closes on 15 February 2026, at 11:59 PM.</li>
+            <li>Registration closes on 22 February 2026, at 11:59 PM.</li>
           </ul>
         </div>
 
